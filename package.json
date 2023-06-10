@@ -2,9 +2,10 @@
   "name": "kolaycateslimat-engine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon --watch ./src src/app.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "sha1": "^1.1.1"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.2"
+    "@faker-js/faker": "^8.0.2",
+    "nodemon": "^2.0.20"
   }
 }
